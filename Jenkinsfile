@@ -6,7 +6,7 @@ pipeline {
 	sh '''
 python3 -m venv 
 . ./
-pip3 install -r requirements.txt
+python3 -m pip install -r requirements.txt
 
         '''
       }
