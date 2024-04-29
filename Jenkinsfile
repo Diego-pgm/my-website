@@ -3,7 +3,12 @@ pipeline {
   stages {
     stage('Build'){
       steps{
-	sh 'echo "Hello, friend"'
+	sh 'pip install -r requirements.txt'
+      }
+    }
+    stage('Deploy'){
+      steps{
+        sh 'python3 -m flask run --host=0.0.0.0'
       }
     }
   }
