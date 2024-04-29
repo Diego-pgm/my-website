@@ -5,7 +5,7 @@ pipeline {
       steps{
 	sh '''
 python3 -m venv $PWD 
-source $PWD/bin/activate
+. $PWD/bin/activate
 python3 -m pip install -r requirements.txt
 
         '''
