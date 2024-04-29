@@ -11,9 +11,9 @@ python3 -m pip install -r requirements.txt'''
     }
     stage('Deploy'){
       steps{
-        sh '''
-. $PWD/bin/activate
-flask run --host=0.0.0.0'''
+'''
+echo 'This is the deployment step'
+'''
       }
     }
   }
