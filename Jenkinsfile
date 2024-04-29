@@ -12,7 +12,7 @@ python3 -m pip install -r requirements.txt'''
     stage('Deploy'){
       steps{
 '''
-echo 'This is the deployment step'
+echo "This is the deployment step"
 '''
       }
     }
